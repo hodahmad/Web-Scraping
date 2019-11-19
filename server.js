@@ -34,7 +34,7 @@ app.get("/scrape", function (req, res) {
   db.scrapedData.drop()
 
   axios
-    .get("https://kotaku.com/")
+    .get("https://lifehacker.com/")
     .then(function (response) {
       // Load the HTML into cheerio and save it to a variable
       // '$' becomes a shorthand for cheerio's selector commands, much like jQuery's '$'
